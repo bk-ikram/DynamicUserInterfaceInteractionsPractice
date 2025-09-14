@@ -51,13 +51,35 @@ img{
     margin: auto;
     position: relative;
     height:fit-content;
+    overflow: hidden;
 }
 .images-roll{
     display: flex;
     gap:0px;
     align-items: center;
-    position: absolute;
+    position: relative;
     top: 0%;
-    right: 200px;
-    overflow: hidden;
+}
+
+.navigation-arrows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-dots{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.navigation-dots button{
+    width: 5px;
+    aspect-ratio: 1;
+    border: black solid 1px;
+    background: none;
+    border-radius: 5px;
+}
+
+button.selected{
+    background:black;
 }
